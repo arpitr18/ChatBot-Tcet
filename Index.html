@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TCET EDUBOT Widget</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="chatbot.css" />
+  </head>
+  <body>
+    <div class="chatbot-widget-container">
+      <div id="chatbot-toggle" class="chatbot-toggle-button">💬</div>
+      <div id="chat-window" class="chat-window">
+        <div class="chat-header">
+          TCET EDUBOT
+          <button id="close-chat" title="Close Chat">❌</button>
+        </div>
+        <div
+          id="category-container"
+          class="overflow-y-auto"
+          style="max-height: 220px"
+        ></div>
+        <div class="chat-body" id="chat-body">
+          <div class="message bot">
+            Hello! I'm your college admission assistant. How can I help you
+            today?
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="chatbot.js" type="module"></script>
+  </body>
+</html>
